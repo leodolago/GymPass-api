@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage"
   },
   "keywords": [],
   "author": "leodolago",
@@ -13,6 +16,7 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^22.10.1",
+    "@vitest/coverage-v8": "^2.1.8",
     "prisma": "^6.0.1",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
@@ -21,8 +25,10 @@
     "vitest": "^2.1.8"
   },
   "dependencies": {
+    "@fastify/jwt": "^9.0.3",
     "@prisma/client": "^6.0.1",
     "bcryptjs": "^2.4.3",
+    "dayjs": "^1.11.13",
     "dotenv": "^16.4.7",
     "fastify": "^5.1.0",
     "zod": "^3.23.8"
