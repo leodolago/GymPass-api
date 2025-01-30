@@ -2,7 +2,7 @@
 
 Uma Api baseada no GymPass app.  
 Projeto realizado no MBA Rocketseat Full-stack. (https://www.rocketseat.com.br)  
-Conceitos de solid.
+Entendendo conceitos de solid.
 
 ### Requisitos funcionais
 
